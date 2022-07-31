@@ -18,7 +18,7 @@ public class Dogs extends Animals{
     public void swim(int meter) {
         super.swim(meter);
         int maxSwimDistance = getMaxSwimDistance();
-        if (meter > getMaxSwimDistance()) {
+        if (meter > maxSwimDistance) {
             System.out.println("Но проплыл " + maxSwimDistance + "м. и утонул");
             drownedDogs++;
         } else {
